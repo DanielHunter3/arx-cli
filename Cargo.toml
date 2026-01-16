@@ -1,0 +1,13 @@
+[package]
+name = "arx-cli"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0"
+
+[dependencies]
+# CLI и парсинг
+clap = { version = "4.4", features = ["derive", "env"] } # или lexopt для минимализма
+indicatif = "0.17" # прогресс-бары
+console = "0.15"   # цветной вывод
+
+anyhow = "1.0.100"
