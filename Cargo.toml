@@ -1,12 +1,12 @@
-[package]
-name = "arx-cli"
-version = "0.1.0"
-edition = "2024"
-license = "GPL-3.0"
+[workspace]
+members = [
+    "schu",
+    "domain"
+]
 
-[dependencies]
+[workspace.dependencies]
 # CLI и парсинг
-clap = { version = "4.4", features = ["derive", "env"] } # или lexopt для минимализма
+clap = { version = "4.4", features = ["derive", "env"] }
 indicatif = "0.17" # прогресс-бары
 console = "0.15"   # цветной вывод
 
@@ -17,7 +17,3 @@ env_logger = "0.11"
 colored = "2.1"
 log = "0.4"
 chrono = "0.4.43"
-
-[[bin]]
-name = "arx"         # Имя исполняемого файла
-path = "src/main.rs"

@@ -1,0 +1,10 @@
+[package]
+name = "domain"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+colored = { workspace = true }
+log = { workspace = true }
+chrono = { workspace = true }
+env_logger = { workspace = true }
